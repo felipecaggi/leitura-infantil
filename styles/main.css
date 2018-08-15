@@ -1,0 +1,75 @@
+body, header, main, h1, h2, ul, li {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/cenario-natureza.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+}
+
+/* Typografy */
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Main */
+main {
+    margin: auto;
+    width: 80%;
+}
+
+ul.alfabeto {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.alfabeto li {
+    background-color: #FFC107;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 36px 45px;
+    width: 10px;
+}
+
+ul.silabas {
+    width: 80%;
+    margin: auto;
+}
+
+.silabas li {
+    margin: 2px 2px;
+}
+
+.silaba li{
+    background-color: #03A9F4;
+    display: inline-block;
+    margin: 2px 0px;
+    padding: 36px 35px;
+    text-align: center;
+    width: 30px;
+}
+
+.silaba .principal {
+    background-color: #FFC107;
+}
+
+.alfabeto li:hover, .silaba li:hover {
+    background-color: aquamarine;
+}
