@@ -1,4 +1,4 @@
-body, header, main, h1, h2, ul, li {
+body, div, header, main, h1, h2, ul, li {
     border: 0;
     padding: 0;
     margin: 0;
@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; 
@@ -16,6 +17,16 @@ body {
 
 /* Typografy */
 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ulli.button {
+    list-style-position: outside;
+} */
+
+li {
     list-style-type: none;
 }
 
@@ -35,53 +46,22 @@ main {
     width: 80%;
 }
 
-ul.alfabeto {
-    margin: 20px auto;
-    width: 80%;
-}
-
-.alfabeto li {
-    background-color: #FFC107;
-    display: inline-block;
+.consoante, .silaba, .vogal {
     margin: 4px 2px;
-    padding: 36px 45px;
-    width: 10px;
+    height: 100px;
+    width: 100px;
 }
 
-ul.silabas {
-    width: 80%;
-    margin: auto;
-}
-
-.silabas li {
-    margin: 2px 2px;
-}
-
-.silaba li {
-    background-color: #03A9F4;
-    display: inline-block;
-    margin: 2px 0px;
-    padding: 36px 35px;
-    text-align: center;
-    width: 30px;
-}
-
-.silaba .principal {
+button.vogal, button.consoante {
     background-color: #FFC107;
+}
+
+button.silaba {
+    background-color: #03A9F4;
 }
 
 .alfabeto li:hover, .silaba li:hover {
     background-color: aquamarine;
-}
-
-.silaba li.teste {
-    background-color: beige;
-}
-
-button {
-    background-color: #03A9F4;
-    width: 100px;
-    height: 100px;
 }
 
 button:hover {
