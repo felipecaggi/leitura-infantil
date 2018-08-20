@@ -57,7 +57,7 @@ ul.silabas {
     margin: 2px 2px;
 }
 
-.silaba li{
+.silaba li {
     background-color: #03A9F4;
     display: inline-block;
     margin: 2px 0px;
@@ -71,5 +71,19 @@ ul.silabas {
 }
 
 .alfabeto li:hover, .silaba li:hover {
+    background-color: aquamarine;
+}
+
+.silaba li.teste {
+    background-color: beige;
+}
+
+button {
+    background-color: #03A9F4;
+    width: 100px;
+    height: 100px;
+}
+
+button:hover {
     background-color: aquamarine;
 }

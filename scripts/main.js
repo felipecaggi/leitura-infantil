@@ -1,6 +1,11 @@
 // audio = new Audio('audios/ba.mp3');
 audio = document.getElementById('audio');
 
+function play(path){
+    audio = new Audio(path);
+    audio.play();
+}
+
 function play(){
     audio.play();
 }
