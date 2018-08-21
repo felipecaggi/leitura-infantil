@@ -1,36 +1,16 @@
-// audio = new Audio('audios/ba.mp3');
-audio = document.getElementById('audio');
+const audioController = () => {
 
-function play(path){
-    audio = new Audio(path);
-    audio.play();
-}
+    const buttons = document.querySelectorAll('button');
+    const audio_player = document.getElementById('audio');
 
-function play(){
-    audio.play();
-}
-
-function pause(){
-    audio.pause();
-}
-
-function stop(){
-    audio.pause();
-    audio.currentTime = 0;
-}
-
-function aumentar_volume(){
-    if( audio.volume < 1)  audio.volume += 0.1;
-}
-
-function diminuir_volume(){
-    if( audio.volume > 0)  audio.volume -= 0.1;
-}
-     
-function mute(){
-    if( audio.muted ){
-        audio.muted = false;
-    }else{
-        audio.muted = true;
-    }
+    buttons.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            const element = event.target;
+            const audio_src = element.dataset.audio;
+            audio_player.pause();
+            audio_player.src = audio_src;
+            audio_player.currentTime = 0;
+            audio_player.play();
+        });
+    })
 }

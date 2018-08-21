@@ -16,8 +16,8 @@
         <main>
             <h2>ALFABETO</h2>
             <div class="alfabeto">
-                <button class="vogal" onclick="play(src='audios/')">A</button>
-                <button class="consoante" onclick="play('audios/')">B</button>
+                <button class="vogal" data-audio="audios/ba.mp3">A</button>
+                <button class="consoante" data-audio="audios/audio-test.mp3">B</button>
                 <button class="consoante" onclick="play('audios/')">C</button>
                 <button class="consoante" onclick="play('audios/')">D</button>
                 <button class="vogal" onclick="play('audios/')">E</button>
@@ -269,9 +269,14 @@
                 </li>
             </ul>
         </main>
+
         <audio id="audio">
             <source src="audios/ba.mp3" type="audio/mp3">
         </audio>
+
         <script src="scripts/main.js"></script>
+        <script>
+            audioController();
+        </script>
     </body>
 </html>
