@@ -46,10 +46,21 @@ main {
     width: 80%;
 }
 
+.alphabet li {
+    display: inline-block;
+}
+
 .consoante, .silaba, .vogal {
-    margin: 4px 2px;
     height: 100px;
     width: 100px;
+}
+
+li .consoante, li .silaba, li .vogal {
+    margin: 4px 2px;
+}
+
+.consoante, .silaba, .vogal {
+    margin: 4px 4px;
 }
 
 button.vogal, button.consoante {
