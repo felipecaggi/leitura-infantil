@@ -15,21 +15,11 @@ body {
     -o-background-size: cover; 
 }
 
-/* Typografy */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* ulli.button {
-    list-style-position: outside;
-} */
-
+/* Typografy */ 
 li {
     list-style-type: none;
 }
-
+    
 /* Header */
 header {
     text-align: center;
@@ -50,17 +40,10 @@ main {
     display: inline-block;
 }
 
-.consoante, .silaba, .vogal {
-    height: 100px;
-    width: 100px;
-}
-
 li .consoante, li .silaba, li .vogal {
     margin: 4px 2px;
-}
-
-.consoante, .silaba, .vogal {
-    margin: 4px 4px;
+    height: 100px;
+    width: 100px;
 }
 
 button.vogal, button.consoante {
@@ -69,10 +52,6 @@ button.vogal, button.consoante {
 
 button.silaba {
     background-color: #03A9F4;
-}
-
-.alfabeto li:hover, .silaba li:hover {
-    background-color: aquamarine;
 }
 
 button:hover {

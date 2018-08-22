@@ -3,7 +3,7 @@
 const audioController = () => {
 
     const buttons = document.querySelectorAll('button');
-    audio_player = document.getElementById('audio');
+    const waudio_player = document.getElementById('audio');
 
     buttons.forEach((element) => {
         element.addEventListener('click', (event) => {
